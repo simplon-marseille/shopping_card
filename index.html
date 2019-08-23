@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon super site</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+      <ul class="center shadow text-center">
+        <li>Home</li>
+        <li>Product</li>
+        <li>Signup</li>
+        <li id="panier"><a href="#">Panier - </a> <span id="counter"> 0 </span><span> article(s)</span></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="row" id="rowProduct">
+      </div>
+    </div>
+
+
+<!-- Modal -->
+  <div class="modal-dialog" role="document" id="modal" style="position: fixed;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Panier</h4>
+      </div>
+      <div class="modal-body" id="modal-body">
+      <!-- contenue de ma modal -->
+      </div>
+      <div class="modal-footer">
+        <div>TOTAL:<span id="total"> 0 </span></div>
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+        <button type="button" class="btn btn-danger" id="reset-card">Reset shopping card</button>
+      </div>
+    </div>
+  </div>
+  <script src="main.js" type="module" ></script>
+</body>
+</html>
